@@ -35,7 +35,7 @@
       background: rgba(255, 255, 255, 0.95);
       border: 1px solid #e2e8f0;
       color: #334155;
-      font-size: 13px;
+      font-size: 15px;
       line-height: 1.4;
       box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
       white-space: pre-line;
@@ -83,18 +83,19 @@
       position: fixed;
       top: 16px;
       left: 16px;
-      width: 46px;
-      height: 46px;
+      padding: 14px 18px;
+      min-height: 50px;
       border: none;
-      border-radius: 50%;
+      border-radius: 8px;
       z-index: 1100;
       background: #0f172a;
       color: #ffffff;
-      font-size: 22px;
-      font-weight: 700;
+      font-size: 17px;
+      font-weight: 600;
       cursor: pointer;
       box-shadow: 0 8px 24px rgba(15, 23, 42, 0.28);
-      line-height: 1;
+      line-height: 1.2;
+      white-space: nowrap;
     }
 
     #helpMenuButton:hover {
@@ -200,7 +201,7 @@
 </head>
 
 <body>
-  <button id="helpMenuButton" type="button" aria-label="Open help menu" title="How to use the graph">?</button>
+  <button id="helpMenuButton" type="button" aria-label="Open info and querying help" title="Info &amp; Querying">Info &amp; Querying</button>
   <div id="helpPopupOverlay" aria-hidden="true">
     <div id="helpPopup" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
       <button class="popup-close" id="helpPopupClose" aria-label="Close help">×</button>
